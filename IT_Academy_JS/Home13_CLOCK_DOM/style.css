@@ -1,10 +1,63 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-.main_clock{
-    width: 600px;
-    height: 600px;
-    border-radius: 100%;
-    background-color: orange;
-    position: relative;
+.main_clock {
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  background-color: orange;
+  position: relative;
+}
+.main_clock > div:not(.boxForSeconds, .boxForMinutes, .boxForHours) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.main_clock > div > div:not(.arrowOfSeconds, .arrowOfMinutes, .arrowOfHours) {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: green;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+.boxForSeconds,
+.boxForMinutes,
+.boxForHours {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  display: flex;
+  justify-content: flex-end;
+}
+.boxForSeconds {
+  width: 540px;
+  height: 5px;
+}
+.boxForMinutes {
+  width: 460px;
+  height: 8px;
+}
+.boxForHours {
+  width: 340px;
+  height: 15px;
+}
+.arrowOfSeconds,
+.arrowOfMinutes,
+.arrowOfHours {
+  border-radius: 15px;
+  width: 50%;
+  height: 100%;
+  background-color: #5b635c;
+}
+.arrowOfHours {
+  background-color: #222422;
 }
