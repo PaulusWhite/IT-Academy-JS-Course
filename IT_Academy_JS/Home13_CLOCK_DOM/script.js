@@ -21,7 +21,7 @@ let countClockForSec = -90;
 let countClockForMinutes = -90;
 let countClockForHours = -90;
 setInterval(function(){
-    arrowForSeconds.style.cssText = `transform: translate(-50%, -50%) rotate(${countClockForSec+6}deg);`;
+    arrowForSeconds.style.cssText = `transform: translate(-50%, -50%) rotate(${countClockForSec+6}deg);transition:1s;`;
     countClockForSec+=6;
 },1000);
 setInterval(function(){
