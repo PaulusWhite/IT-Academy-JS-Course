@@ -1,0 +1,25 @@
+form {
+  width: 400px;
+}
+form div:not(.radio, .checkbox, .textarea) {
+  position: relative;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.textarea {
+  position: relative;
+}
+input:not(.radio > input, .checkbox > input),
+select {
+  width: 190px;
+  padding: 0;
+}
+.checkbox input {
+  margin-left: 65px;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php">
+        <div>
+            <label for="developers">Разработчики:</label>
+            <input type="text" name="developers" id="developers">
+        </div>
+        <div>
+            <label for="siteName">Название сайта:</label>
+            <input type="text" name="siteName" id="siteName">
+        </div>
+        <div>
+            <label for="url">URL сайта:</label>
+            <input type="text" name="url" id="url">
+        </div>
+        <div>
+            <label for="date">Дата запуска сайта:</label>
+            <input type="date" name="data" id="date">
+        </div>
+        <div>
+            <label for="visitors">Посетителей в сутки:</label>
+            <input type="number" name="visitors" id="visitors">
+        </div>
+        <div>
+            <label for="email">E-mail для связи:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="select" id="select">Рубрика каталога:</label>
+            <select name="select">
+                <option value="1">Бытовая техника</option>
+                <option value="2">Косметика</option>
+                <option value="3">Печатная продукция</option>
+            </select>
+        </div>
+        <div>
+            <label>Размещение:</label>
+            <div class="radio" id="radio">
+                <input type="radio" name="accommodation" value="1" id="free">
+                <label for="free">бесплатное</label>
+                <input type="radio" name="accommodation" value="2" id="pay">
+                <label for="pay">платное</label>
+                <input type="radio" name="accommodation" value="3" id="vip">
+                <label for="vip">VIP</label>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label for="allow">Разрешить отзывы:</label>
+            <input type="checkbox" name="allow" id="allow">
+        </div>
+        <div class="textarea">
+            <label for="textarea">Описание сайта:</label><br>
+            <textarea name="textarea" id="textarea"></textarea>
+        </div>
+        <button type="submit" id="button">Опубликовать</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

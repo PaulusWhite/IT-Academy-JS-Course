@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+.main_clock{
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    background-color: orange;
+    position: relative;
+}
