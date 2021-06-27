@@ -1,0 +1,44 @@
+.container1{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,100px);
+    /* grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 100px 100px 100px 100px 100px;
+     */grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+}
+
+.container1 div{
+    background-color: antiquewhite;
+}
+
+.tree__films li{
+    padding-left: 30px;
+}
+
+pre{
+    font-size: 20px;
+    white-space: normal;
+}
+
+.todo__list li{
+    display: flex;
+}
+
+.todo__list .name{
+    color: blue;
+}
+
+.club-image img{
+    max-width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.input-field>label{
+    position: relative;
+}
+
