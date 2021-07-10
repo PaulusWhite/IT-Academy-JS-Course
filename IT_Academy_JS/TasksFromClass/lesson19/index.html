@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div id="root">
+        <div class="content">
+            <div class="first-block">
+                <div></div>
+            </div>
+            <div class="second-block">
+                <aside class="left-column">
+                    <a href="#" class="logo">
+                        <span>
+                            <i class="material-icons current-state medium">device_hub</i>
+                        </span>
+                    </a>
+                    <div class="about">
+                        <div class="about-modal">
+                            <i class="material-icons current-state medium">help_outline</i>
+                            <div class="about-modal-text">About</div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="navbar">
+                    <nav>
+                        <div class="head-info">
+                            <span>
+                                <i class="material-icons current-state">apps</i>
+                            </span>
+                            <div class="title-info">
+                                <div class="info-name">
+                                    singularity 1.0
+                                </div>
+                                <div class="info-descr">
+                                    Software project
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="active item-link">
+                            <i class="material-icons">credit_card</i>
+                            <div class="info">Kanban Board</div>
+                        </a>
+                        <a href="#" class="item-link">
+                            <i class="material-icons">settings</i>
+                            <div class="info">Project settings</div>
+                        </a>
+                        <hr>
+                    </nav>
+                </div>
+
+                <div class="breadcrumbs">
+                    Projects <span class="slash">/</span> singularity 1.0 <span class="slash">/</span> Kanban Board
+                </div>
+
+                <div class="head-title">
+                    <h1>Kanban board</h1>
+                    <a href="#">
+                        <button>
+                            <i class="material-icons">texture</i>
+                            <div>Github Repo</div>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="board-filters">
+                    <div class="search">
+                        <i class="material-icons">search</i>
+                        <input placeholder="Search here">
+                    </div>
+                    <div class="users">
+                        <div class="user">
+                            <div class="user-current">
+
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user-current user2">
+
+                            </div>
+                        </div>
+                        <div class="user">
+                            <div class="user-current user3">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="my-issues">
+                        <div>
+                            Only My Issues
+                        </div>
+                    </button>
+
+                    <button class="my-issues">
+                        <div>
+                            Recently Updated
+                        </div>
+                    </button>
+                </div>
+
+                <div class="basic-content">
+                    <div class="task-col1" >
+                        <div class="head-task">
+                            Backlog
+                            <span class="task-counter">5</span>
+                        </div>
+                        <div class="all-tasks">
+                            <a class="task-item" id="drag1" href="#">
+                                <div class="task-info">
+                                    <p class="descr">
+                                        ца
+                                    </p>
+                                    <div class="task-about">
+                                        <div>
+                                            <i class="material-icons current-state">done</i>
+                                            <i class="material-icons current-progress">arrow_upward</i>
+                                        </div>
+                                        <div class="avatar">
+                                            <div class="avatar-img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="task-item" id="drag2" href="#">
+                                <div class="task-info">
+                                    <p class="descr">
+                                        You can use rich text with images in issue descriptions.
+                                    </p>
+                                    <div class="task-about">
+                                        <div>
+                                            <i class="material-icons current-state">done</i>
+                                            <i class="material-icons current-progress">arrow_upward</i>
+                                        </div>
+                                        <div class="avatar">
+                                            <div class="avatar-img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="task-item" id="drag3" href="#">
+                                <div class="task-info">
+                                    <p class="descr">
+                                        This is an issue of type: Task.
+                                    </p>
+                                    <div class="task-about">
+                                        <div>
+                                            <i class="material-icons current-state">done</i>
+                                            <i class="material-icons current-progress">arrow_upward</i>
+                                        </div>
+                                        <div class="avatar">
+                                            <div class="avatar-img">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="task-col1">
+                        <div class="head-task">
+                            Selected for development
+                            <span class="task-counter">2</span>
+                        </div>
+                        <div class="all-tasks" data-rbd-droppable-context-id="0">
+
+                        </div>
+                    </div>
+
+
+                    <div class="task-col1">
+                        <div class="head-task">
+                            In progress
+                            <span class="task-counter">1</span>
+                        </div>
+                        <div class="all-tasks" data-rbd-droppable-context-id="0">
+
+                        </div>
+                    </div>
+
+
+                    <div class="task-col1">
+                        <div class="head-task">
+                            Done
+                            <span class="task-counter">1</span>
+                        </div>
+                        <div class="all-tasks" data-rbd-droppable-context-id="0">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!---->
+            <div class="about-block hide">
+                <div class="about-block-content">
+                    <p>About</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"></div>
+   
+    <script src="./js/counterTasks.js"></script>
+    <script src="./js/draganddrop.js"></script>
+    <script src="./js/preloader.js"></script>
+    
+</body>
+
+</html>
