@@ -2,31 +2,32 @@ class HashStorageClass {
     constructor(){
         this.obj = {
         }
-        this.addValue = (key,value) => {
-            this.obj[key] = value;
+    }
+    addValue(key,value){
+        return this.obj[key] = value;
+    }
+
+    getValue(key){
+        if(this.obj[key]){
+            return this.obj[key];
+        }else{
+            return "Такого напитка в хранилище нет!";
         }
-        this.getValue = (key) => {
-            if(this.obj[key]){
-                return this.obj[key];
-            }else{
-                return "Такого напитка в хранилище нет!";
-            }
+    }
+    deleteValue(key){
+        if(this.obj[key]){
+            delete this.obj[key];
+            return true;
+        }else if(!this.obj[key]){
+            return false;
         }
-        this.deleteValue = (key) => {
-            if(this.obj[key]){
-                delete this.obj[key];
-                return true;
-            }else if(!this.obj[key]){
-                return false;
-            }
+    }
+    getKeys(){
+        this.arr = [];
+        for(let key in this.obj){
+            this.arr.push(key);
         }
-        this.getKeys = () => {
-            this.arr = [];
-            for(let key in this.obj){
-                this.arr.push(key);
-            }
-            return this.arr;
-        }
+        return this.arr;
     }
 }
 let drinkStorage = new HashStorageClass();
