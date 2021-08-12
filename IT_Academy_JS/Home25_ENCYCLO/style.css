@@ -1,0 +1,17 @@
+a {
+  display: block;
+}
+.name {
+  font-weight: bold;
+  margin-top: 0;
+}
+div {
+  display: inline-block;
+}
+.nav {
+  max-width: 200px;
+}
+.article {
+  max-width: 800px;
+  margin-left: 50px;
+}
