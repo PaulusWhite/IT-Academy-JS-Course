@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Книжный магазин Bookhunter.by</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="60px" height="60px">
+            <p>BookHunter.BY</p>
+        </div>
+        <div class="nav">
+            <div class="nav__about">
+                <p>О нас</p>
+            </div>
+            <div class="nav__login">
+                <p class="nav__sign-in">Зарегистрироваться | Войти</p>
+            </div>
+            <div class="nav__basket">
+                <p><a href="basket.html">Корзина<i class="fas fa-shopping-cart"></i>
+                    <span>0</span></a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="preview">
+            <div class="preview__tagline">
+                <h1>The BookHunter</h1>
+                <p>Хорошая книга &#8212; бесконечна</p>
+            </div>
+        </div>
+        <div class="tool-panel">
+            <div class="tool-panel__search">
+                <label for="search"><i class="fas fa-search"></i></label>
+                <input type="text" id="search" name="search" placeholder="Введите имя автора или название книги">
+            </div>
+            <div class="tool-panel__sort">
+                <div class="tool_panel__sort-name">
+                    <select name="select" id="select">
+                        <option class="disabled" value="value0" disabled>Упорядочить</option>
+                        <option value="default">По умолчанию</option>
+                        <option value="cheap">Сначала дешёвые</option>
+                        <option value="expensive">Сначала дорогие</option>
+                        <option value="years">По году издания</option>
+                    </select>
+                    <div class="tool_panel__reset">
+                        <span class="tool_panel__resetBtn" id="resetFilters">Сброс фильтров</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content__allposts">
+                
+            </div>
+
+        </div>
+        <div class="renderGoods">
+            <button id="render">Показать остальное</button>
+        </div>
+    </main>
+
+    <div class="box-login-and-registration">
+        <div class="registration">
+            <form>
+                <h1>Зарегистрироваться</h1>
+                <label for="userLoginReg"></label>
+                <input type="text" id="userLoginForReg" name="userLoginReg" placeholder="Логин" maxlength="30">
+
+                <label for="userEmailForReg"></label>
+                <input type="text" id="userEmailForReg" name="userEmailForReg" placeholder="Email" maxlength="30">
+
+                <label for="userNameForLogin"></label>
+                <input type="text" id="userNameForLogin" name="userNameForLogin" placeholder="Имя" maxlength="30">
+
+                <label for="userLastNameForLogin"></label>
+                <input type="text" id="userLastNameForLogin" name="userLastNameForLogin" placeholder="Фамилия" maxlength="30">
+
+                <label for="passwordForReg"></label>
+                <input type="password" id="passwordForReg" name="passwordForReg" placeholder="Пароль" maxlength="30">
+
+                <button type="submit"><span>Регистрация</span></button>
+            </form>
+            <p>Если у Вас уже есть аккаунт,то вы можете <span>авторизоваться</span></p>
+        </div>
+        <div class="login">
+            <form>
+                <h1>Войти</h1>
+                <label for="userLoginForSignIn"></label>
+                <input type="text" id="userLoginForSignIn" name="userNameLog" placeholder="Логин">
+                <label for="userPasswordForSignIn"></label>
+                <input type="password" id="userPasswordForSignIn" name="passwordLog" placeholder="Пароль">
+                <button type="submit"><span>Войти</span></button>
+            </form>
+            <p>Если у Вас ещё нет аккаунта,то вы можете <span>зарегистрироваться</span></p>
+        </div>
+    </div>
+    <footer>
+        <form>
+            <p>Подпишитесь , чтобы не пропустить наши акции!</p>
+            <label for="email">Введите свой Email</label>
+            <div class="input-and-btn">
+                <input type="email" id="email" name="email">
+                <button type="submit"><span>Подписаться</span></button>
+            </div>
+        </form>
+        <p class="policy">&#169; 2021 Фурсевич Павел</p>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/9409e8e32b.js" crossorigin="anonymous"></script>
+    <script src="scripts/getLocalData.js"></script>
+    <script src="scripts/registration.js"></script>
+    <script src="scripts/loginRegistrationValid.js"></script>
+    <script src="scripts/loginRegistrationAnimations.js"></script>
+    <script src="scripts/signIn.js"></script>
+    <script src="scripts/mainDynamism.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/sort.js"></script>
+    <script src="scripts/basket.js"></script>
+    <script src="scripts/setActiveUser.js"></script>
+</body>
+</html>
